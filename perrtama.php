@@ -18,5 +18,4 @@ elseif ($waktu < '17:00')
 {
     $katasapa = "Selamat malam";
 }
-
 echo "{$katasapa} {$nama}, sekarang pukul {$waktu}\n";
