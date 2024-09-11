@@ -6,4 +6,4 @@ class Bola
     public function volume($jari_jari) : float {
         return (4/3)*self::PHI*pow($jari_jari,3);
     }
-}
+} 
