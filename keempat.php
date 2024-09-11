@@ -47,20 +47,20 @@ class Kerucut extends Lingkaran
     }
 }
 
-$bola = new Bola();
+$bola = new Bola(2);
 $bola->jari_jari = 5;
 echo "BOLA\n";
 echo "Volume bola: " . $bola->volume() . "\n";
 echo "Luas bola: " . $bola->luas() . "\n";
 
-$tabung = new Tabung();
+$tabung = new Tabung(5, 15);
 $tabung->jari_jari = 5;
 $tabung->tinggi = 15;
 echo "TABUNG\n";
 echo "Volume tabung: " . $tabung->volume() . "\n";
 echo "Luas tabung: " . $tabung->luas() . "\n";
 
-$kerucut = new Kerucut();
+$kerucut = new Kerucut(7, 12);
 $kerucut->jari_jari = 5;
 $kerucut->tinggi = 12;
 echo "KERUCUT\n";
