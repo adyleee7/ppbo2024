@@ -1,51 +1,25 @@
 <?php
 
-class Author
-{
-    public string $name;
-    public string $description;
+require_once 'Author.php';
+require_once 'Book.php';
+require_once 'Publisher.php';
 
-    public function show($type): array
-    {
-        return [];
-    }
-}
+$author = new Author();
+$author-> name = "Tere Liye";
+$author-> description = "Penulis";
 
-class Book
-{
-    public int $ISBN;
-    public string $title;
-    public string $description;
-    public string $category;
-    public string $language;
-    public int $numberOfPages;
-    public string $author;
-    public string $publisher;
+$book = new Book();
+$book-> ISBN = "83998";
+$book-> title = "Pulang";
+$book-> description = "Menceritakan tentang";
+$book-> category = "Non Fiksi";
+$book-> language = "Bahasa Indonesia";
+$book-> numberOfPages = 254;
+$book-> author = "Tere Liye";
+$book-> publisher = "Gramedia";
 
-    public function showAll(): array
-    {
-        return [];
-    }
+$publisher = new Publisher();
+$publisher-> name = "Gramedia";
+$publisher-> address = "Senayan City";
 
-    public function detail($ISBN): array
-    {
-        return [];
-    }
-}
-
-class Publisher
-{
-    public string $name;
-    public string $address;
-    private string $phone;
-
-    public function setPhone(string $phone): void
-    {
-        $this->phone = $phone;
-    }
-
-    public function getPhone(): string
-    {
-        return $this->phone;
-    }
-}
+print_r($book-> showAll());
