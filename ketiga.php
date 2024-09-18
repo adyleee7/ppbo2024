@@ -37,6 +37,6 @@ class Kerucut
         return (1/3)*self::PHI*pow($jari_jari,2)*$tinggi;
     }
 }
-$nasi_tumpeng = new Kerucut;
+$nasi_tumpeng = new Kerucut(2, 8);
 $vol = $nasi_tumpeng-> volume(4, 10);
 echo "Volume nasi tumpeng adalah {$vol}";
