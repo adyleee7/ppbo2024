@@ -1,0 +1,17 @@
+{
+    "name": "adyleee7/ppbo2024",
+    "description": "Pemrograman Berorientasi Objek",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dina Adillah",
+            "email": "h1101231045@student.untan.ac.id"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "App\\":"App"
+        }
+    }
+}
