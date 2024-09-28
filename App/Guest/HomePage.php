@@ -1,8 +1,8 @@
 <?php
-namespace App\Guest;
+namespace App\Admin;
 class HomePage
 {
     public function tampil() : void {
-        echo "Halaman depan guest";
+        echo "Halaman depan admin";
     }
 }
