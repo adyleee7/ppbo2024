@@ -1,11 +1,19 @@
 <?php
-namespace App\Admin;
+namespace App\Model\Akademik;
 
 class Pegawai {
     public int $nip;
     public string $nama;
     protected int $no_hp;
     public string $alamat;
+
+    public function __construct(int $nip, string $nama, string $no_hp, string $alamat)
+    {
+        $this->nip = $nip;
+        $this->nama= $nama;
+        $this->no_hp= $no_hp;
+        $this->alamat= $alamat;
+    }
 
     public function cekIn(): bool {
         return true;
@@ -15,7 +23,7 @@ class Pegawai {
         return true;
     }
 
-    public function getNoHp(): int {
+    protected function getNoHp(): int {
         return $this->no_hp;
     }
 
@@ -23,4 +31,3 @@ class Pegawai {
         $this->no_hp = $no_hp;
     }
 }
-?>

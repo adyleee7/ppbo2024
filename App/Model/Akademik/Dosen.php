@@ -1,8 +1,8 @@
 <?php
-namespace App\Admin;
+namespace App\Model\Akademik;
 
 class Dosen extends Pegawai {
-    public string $nidn;
+    private int $nidn;
 
     public function mengajar(): void {
         echo "{$this->nama} sedang mengajar perkuliahan";
